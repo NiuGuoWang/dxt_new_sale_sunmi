@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+
+    <TextView
+        android:id="@+id/tv_radio_text"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:text="名称"
+        android:textColor="#ff323232"
+        android:textSize="16sp"
+        android:typeface="monospace" />
+    <RadioButton
+        android:id="@+id/rb_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:buttonTint="@color/main_color"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:text="" />
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_o"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</RelativeLayout>

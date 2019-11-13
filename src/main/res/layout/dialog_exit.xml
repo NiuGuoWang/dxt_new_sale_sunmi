@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <TextView
+        android:id="@+id/delete_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/edit_dialog_bg"
+        android:gravity="center"
+        android:text="提示"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/delete_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/delete_title"
+        android:text="请先到PC端设置默认仓库，再进行操作！"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_exist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_dialog_delete"
+        android:textColor="@color/white"
+        android:text="确认"/>
+</RelativeLayout>

@@ -1,0 +1,3 @@
+# Referenced at F:\YingKe\dxt_new_sale_sunmi\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:44
+-keep class com.dxt.retail4sunmi.DxtSaleApplication { <init>(...); }
+

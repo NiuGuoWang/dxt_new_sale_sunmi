@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ordersuccess_1"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/ordersuccess_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/view_color"
+            android:layout_margin="15dp"
+            android:text="恭喜！操作成功啦！"/>
+        <TextView
+            android:id="@+id/ordersuccess_tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/view_color"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone"
+            android:text="请到收款台进行付款!"/>
+        <Button
+            android:id="@+id/ordersuccess_but_1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_bg"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="返回首页"/>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+</LinearLayout>

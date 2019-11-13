@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">迎客</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+
+    <string name="public_text_4">请检查您的网络!</string>
+    <string name="msg_camera_framework_bug">很遗憾，Android 相机出现问题。你可能需要重启设备。</string>
+    <string name="msg_default_status">音量键可控制开关灯</string>
+    <string name="button_ok">OK</string>
+
+    <!-- 成功页面 OrderSuccessActivity -->
+    <string name="ordersuccess_text_3">订单修改成功!</string>
+    <string name="ordersuccess_text_4">恭喜你,订单已修改成功!</string>
+
+
+    <!-- 失败页面 OrderFailActivity -->
+    <string name="orderfail_text_1">订单提交失败!</string>
+    <string name="orderfail_text_2">订单提交失败,请返回购物车再试一次!</string>
+    <string name="orderfail_text_3">订单修改失败!</string>
+    <string name="orderfail_text_5">会员录入失败!</string>
+    <string name="orderfail_text_6">会员录入失败，可能是由以下原因造成:</string>
+    <string name="orderfail_text_7">1.该会员的手机号已被注册.</string>
+    <string name="search_condition">请输入商品名称或编码或串号</string>
+    <string name="search_order">订单查询</string>
+    <string name="member_center">会员中心</string>
+    <string name="make_order">快速下单</string>
+    <string name="should_pay">实收金额：</string>
+    <string name="origin_price">原价：</string>
+    <string name="scan_transApp">POS 通</string>
+    <string name="imei_hint">多个imei请用英文逗号分隔</string>
+
+</resources>

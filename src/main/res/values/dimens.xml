@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_margin">10dp</dimen>
+    <dimen name="image_top">120dp</dimen>
+    <dimen name="image_bottom">130dp</dimen>
+    <dimen name="button_margin_top">50dp</dimen>
+    <dimen name="item_small_text_size">13sp</dimen>
+    <dimen name="item_big_text_size">15sp</dimen>
+
+    <!--&lt;!&ndash;**********************************************-->
+    <!--*                  Dialog                    *-->
+    <!--**********************************************&ndash;&gt;-->
+    <!--<dimen name="qmui_dialog_radius">4dp</dimen>-->
+    <!--<dimen name="qmui_dialog_action_button_radius">2dp</dimen>-->
+
+
+</resources>

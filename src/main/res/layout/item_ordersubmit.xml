@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_orderSubmitItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/item_big_text_size"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="center"
+            android:src="@drawable/remove" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_imei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_orderSubmitInfo"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:text="IMEI："
+            android:textColor="@color/black"
+            android:textSize="@dimen/item_small_text_size" />
+
+        <EditText
+            android:id="@+id/et_imei"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_bg"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:hint="@string/imei_hint"
+            android:textSize="@dimen/item_small_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_item_scan"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:scaleType="center"
+            android:src="@drawable/scan" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_orderSubmitInfo"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/text_view"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="单价:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/item_small_text_size" />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="center"
+            android:inputType="numberDecimal|numberSigned"
+            android:maxWidth="100dp"
+            android:minWidth="60dp"
+            android:padding="2dp"
+            android:textSize="@dimen/item_small_text_size" />
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@drawable/subtract" />
+
+        <EditText
+            android:id="@+id/et_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:maxWidth="40dp"
+            android:minWidth="30dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:textSize="@dimen/item_small_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_plus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src=" @drawable/plus" />
+
+        <LinearLayout
+            android:id="@+id/unit_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="单位："
+                android:textColor="@color/black"
+                android:textSize="@dimen/item_small_text_size" />
+
+            <Spinner
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/black"
+                android:textSize="@dimen/item_small_text_size" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/gray" />
+</RelativeLayout>

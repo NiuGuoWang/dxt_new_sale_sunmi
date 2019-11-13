@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/text_orderid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="订单号："
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_orderManagerList_orderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_orderid"
+        android:layout_toRightOf="@+id/text_orderid"
+        android:text="348595"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_orderid"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="下单时间："
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_orderManagerList_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_date"
+        android:layout_toRightOf="@+id/text_date"
+        android:text="2017-06-19 09:48:35"
+        android:textSize="16sp" />
+
+    <EditText
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:id="@+id/text_orderManagerList_btn"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/text_orderManagerList_date"
+        android:layout_alignTop="@+id/text_orderManagerList_date"
+        android:background="@drawable/red_round_btn_bg"
+        android:gravity="center"
+        android:text="详情"
+        android:textColor="@color/view_color"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/tv_orderState"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+       android:layout_above="@+id/text_orderManagerList_btn"
+        android:gravity="center"
+        android:textColor="@color/view_color"
+        android:textSize="14sp" />
+</RelativeLayout>

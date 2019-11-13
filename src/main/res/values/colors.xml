@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>   <color name="white">#ffffff</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="main_color">#FD4302</color>
+
+    <color name="app_mode_view">#b2b2b2</color>
+    <color name="gray">#cccccc</color>
+    <color name="bright_black">#666666</color>
+    <color name="gray_o">#eae8e8</color>
+    <color name="content_gray">#efefef</color>
+    <color name="content_gray_00">#b3b3b3</color>
+    <color name="text_gray">#666666</color>
+    <color name="content_gray2">#f8f8f8</color>
+    <color name="transparent_gray">#28000000</color>
+    <color name="view_color">#f64141</color>
+    <color name="black">#000000</color>
+    <color name="shop_del">#AAA6A6</color>
+    <color name="cut_offrule">#dddddd</color>
+
+    <color name="gray_line">#85888d</color>
+    <color name="bottom_bg">#ebebeb</color>
+    <color name="finder_mask">#60000000</color>
+</resources>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dxt.retail4sunmi.activity.OrderPayActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:text="@string/should_pay"
+            android:textColor="@color/viewfinder_laser"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv1_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2_money"
+            android:layout_toRightOf="@+id/tv1"
+            android:textColor="@color/viewfinder_laser"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/origin_price"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv2_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv2"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <com.dxt.retail4sunmi.view.dialog.ConstraintHeightListView
+        android:id="@+id/orderPayList"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:maxHeight="200dp" />
+
+    <TextView
+        android:id="@+id/check_pay"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/gray"
+        android:gravity="center_vertical"
+        android:text="\u3000选择收款方式：" />
+
+
+    <com.dxt.retail4sunmi.view.MulRadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/alipay"
+                android:gravity="center_vertical"
+                android:text="支付宝收款" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/rb_alipay_pay"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:button="@drawable/cb_pay_style"
+                android:checked="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/wechat"
+                android:gravity="center_vertical"
+                android:text="微信收款" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/rb_wechat_pay"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:button="@drawable/cb_pay_style"
+                android:checked="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/cash"
+                android:gravity="center_vertical"
+                android:text="现金收款" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/rb_cash_pay"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:button="@drawable/cb_pay_style"
+                android:checked="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/scanpay"
+                android:gravity="center_vertical"
+                android:text="扫码收款" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/rb_scan_pay"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:button="@drawable/cb_pay_style"
+                android:checked="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_height="48dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/bankcard"
+                android:gravity="center_vertical"
+                android:text="刷卡收款" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/rb_card_pay"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:button="@drawable/cb_pay_style"
+                android:checked="false" />
+        </LinearLayout>
+
+
+    </com.dxt.retail4sunmi.view.MulRadioGroup>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <Button
+        android:id="@+id/btn_toPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/btn_bg_red"
+        android:text="收\u3000款"
+        android:textColor="@color/white" />
+</LinearLayout>
